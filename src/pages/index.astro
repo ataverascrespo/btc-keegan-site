@@ -1,0 +1,62 @@
+---
+import Navbar from "../components/Navbar.astro";
+
+---
+
+<Navbar></Navbar>
+<div class="absolute spacer layer1"></div>
+
+<section id="hero" class="bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" >
+	<!-- Hero Container -->
+	<div class="h-[50vh] lg:min-h-screen pt-24 container flex flex-col items-center justify-center lg:justify-around gap-20 lg:gap-0 mx-auto px-6 lg:flex-row ">
+	  <!-- Content Container -->
+		<div class="flex flex-col lg:w-3/4">
+			<h1 class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-yellow-500 bg-clip-text text-transparent text-6xl font-extrabold text-center xl:text-7xl lg:max-w-3xl lg:text-left pb-4">
+				Keegan Francis
+			</h1>
+			<p class="text-2xl font-semibold text-center text-gray-400 lg:max-w-lg lg:text-left">
+				Want to unlock the future of finance? Dive into the world of Bitcoin and Cryptocurrency with a true Subject Matter Expert.
+			</p>
+		</div>
+		<!-- Image -->
+		<div class="mx-auto self-end">
+			<img src="/img/profile-header.png" class="object-cover" alt="hero">
+		</div>
+	</div>
+</section>
+
+<section id="links" class="bg-[#17BEBB]" >
+	<!-- Hero Container -->
+	<div class="h-[50vh] lg:min-h-screen container flex flex-col items-center justify-center lg:justify-around gap-20 lg:gap-0 mx-auto px-6 lg:flex-row ">
+	  <!-- Content Container -->
+		<div class="flex flex-col lg:w-3/4">
+			<h1 class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-yellow-500 bg-clip-text text-transparent text-6xl font-extrabold text-center xl:text-7xl lg:max-w-3xl lg:text-left pb-4">
+				Keegan Francis
+			</h1>
+			<p class="text-2xl font-semibold text-center text-gray-400 lg:max-w-lg lg:text-left">
+				Want to unlock the future of finance? Dive into the world of Bitcoin and Cryptocurrency with a true Subject Matter Expert.
+			</p>
+		</div>
+		<!-- Image -->
+		<div class="mx-auto">
+			<img src="/img/profile-header.png" class="object-cover" alt="hero">
+		</div>
+	</div>
+</section>
+
+
+<style>
+	.spacer {
+		aspect-ratio: 900/300;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.layer1 {
+		background-image: url('./img/layer2.svg')
+	}
+</style> 
+
+

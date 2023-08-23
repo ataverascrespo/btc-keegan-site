@@ -8,6 +8,9 @@ module.exports = {
 				'slideInUp': "slideInUp 1.25s forwards",
 				'zoomIn': "zoomIn 0.75s",
 			},
+			colors: {
+				webblue: '#17BEBB',
+			},
 			keyframes: {
 			  text: {
 					'0%, 100%': {

@@ -4,19 +4,29 @@ module.exports = {
 	theme: {
 		extend: {
 			animation: {
-			  text: 'text 15s ease infinite',
+				text: 'text 15s ease infinite',
+				'slideInUp': "slideInUp 1.25s forwards",
+				'zoomIn': "zoomIn 0.75s",
 			},
 			keyframes: {
 			  text: {
-				'0%, 100%': {
-				  'background-size': '200% 200%',
-				  'background-position': 'left center',
+					'0%, 100%': {
+					'background-size': '200% 200%',
+					'background-position': 'left center',
+					},
+					'50%': {
+					'background-size': '200% 200%',
+					'background-position': 'right center',
+					},
 				},
-				'50%': {
-				  'background-size': '200% 200%',
-				  'background-position': 'right center',
+				'slideInUp': {
+					"0%": { transform: ' translateY(100%)', opacity:0 },
+					"100%": { transform: 'translateY(0)', }
 				},
-			  },
+				'zoomIn': {
+					"0%": { transform: 'scale(1.5, 1.5)', opacity: 0 },
+					"100%": { transform: 'scale(1, 1)'}
+				},
 			},
 		  }
 		},

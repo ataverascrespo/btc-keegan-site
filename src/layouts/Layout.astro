@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
@@ -16,7 +16,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="overflow-x-hidden">
 		<slot />
 	</body>
 </html>
@@ -25,48 +25,9 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #13151A;
 		background-size: 224px;
-		scroll-behavior: smooth;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 </style>
-
-
-<script>
-	//Callback function for intersectionObserver API
-	const callback = function (entries) {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add("animate-slideInUp");
-			}
-		});
-	};
-
-	//Create an observer
-	const observer = new IntersectionObserver(callback);
-
-	//Observe when the selected element enters viewport
-	document.querySelectorAll(".slideIn").forEach(function (target) {
-		observer.observe(target);
-	});
-
-	//Callback function for intersectionObserver API
-	const callback2 = function (entries) {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add("animate-zoomIn");
-			}
-		});
-	};
-
-	//Create an observer
-	const observer2 = new IntersectionObserver(callback2);
-
-	//Observe when the selected element enters viewport
-	document.querySelectorAll(".zoomIn").forEach(function (target) {
-		observer2.observe(target);
-	});
-
-</script>

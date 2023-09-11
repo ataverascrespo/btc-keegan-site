@@ -8,30 +8,30 @@ import Navbar from "../components/Navbar.astro";
 
 <section id="hero" class="bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] overflow-hidden" >
 	<!-- Hero Container -->
-	<div class="h-[90vh] pt-24 container flex flex-col items-center justify-center lg:justify-around gap-20 lg:gap-0 mx-auto px-6 lg:flex-row ">
+	<div class="h-auto lg:h-[90vh] pt-48 lg:pt-24 container flex flex-col items-center justify-center lg:justify-around gap-20 lg:gap-0 mx-auto px-6 lg:flex-row ">
 	  <!-- Content Container -->
 		<div class="zoomIn flex flex-col lg:w-3/4 relative z-10">
-			<h1 class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-yellow-500 bg-clip-text text-transparent font-extrabold text-center text-3xl xl:text-7xl lg:max-w-3xl lg:text-left pb-4">
+			<h1 class="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-yellow-500 bg-clip-text text-transparent font-extrabold text-center text-8xl md:text-7xl xl:text-7xl lg:max-w-3xl lg:text-left pb-4">
 				Keegan Francis
 			</h1>
-			<p class="text-2xl font-semibold text-center text-gray-400 lg:max-w-lg lg:text-left pb-12">
+			<p class="text-xl md:text-3xl lg:text-2xl font-semibold text-center text-gray-400 lg:max-w-lg lg:text-left pb-12">
 				Want to unlock the future of finance? Dive into the world of Bitcoin and Cryptocurrency with a true Subject Matter Expert.
 			</p>
-			<div class="flex flex-row gap-8 scroll-smooth">
-				<a href="#network" class="w-1/5 bg-blue-500 hover:bg-blue-700 transform duration-200 hover:-translate-y-1 text-white font-bold py-2 px-4 rounded">
+			<div class="flex flex-row gap-8 scroll-smooth justify-center lg:justify-start">
+				<a href="#network" class="w-full lg:w-1/2 xl:w-1/4 bg-blue-500 hover:bg-blue-700 transform duration-200 hover:-translate-y-1 text-white font-bold py-6 lg:py-2 rounded">
 					<div class="flex flex-row gap-4 justify-center items-center ">
 						<svg width="24" height="18" viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M28.159 0.212416C28.4649 0.389723 28.7016 0.665509 28.8304 0.99472C28.9592 1.32393 28.9726 1.68711 28.8684 2.02492L23.2403 20.3124H33.6246C33.9298 20.3123 34.2283 20.4015 34.4834 20.5691C34.7384 20.7367 34.9388 20.9753 35.0598 21.2555C35.1807 21.5357 35.217 21.8451 35.1641 22.1457C35.1112 22.4463 34.9715 22.7247 34.7621 22.9468L9.76215 49.5093C9.52025 49.7665 9.19836 49.9342 8.84894 49.9851C8.49952 50.0359 8.14318 49.9669 7.83799 49.7893C7.53281 49.6117 7.29677 49.336 7.16837 49.0071C7.03996 48.6782 7.02675 48.3154 7.1309 47.978L12.759 29.6874H2.37465C2.06947 29.6875 1.77095 29.5983 1.51592 29.4307C1.26088 29.2631 1.06051 29.0245 0.939538 28.7443C0.818563 28.4641 0.78228 28.1547 0.835168 27.8541C0.888055 27.5536 1.0278 27.2751 1.23715 27.053L26.2371 0.490541C26.4787 0.233663 26.8001 0.0660675 27.1491 0.0150048C27.498 -0.0360579 27.8539 0.0324152 28.159 0.209291V0.212416Z" fill="white"/>
 						</svg>
-						<h1>Join me</h1>
+						<h1 class="text-3xl lg:text-base">Join me</h1>
 					</div>
 				</a>
-				<a href="#content" class="w-1/4 bg-blue-500 hover:bg-blue-700 transform duration-200 hover:-translate-y-1 text-white font-bold py-2 px-4 rounded">
+				<a href="#content" class="w-full lg:w-1/2 xl:w-1/3 bg-blue-500 hover:bg-blue-700 transform duration-200 hover:-translate-y-1 text-white font-bold py-6 lg:py-2 rounded">
 					<div class="flex flex-row gap-4 justify-center items-center ">
 						<svg width="24" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M14 14.252V16.342C13.0949 16.022 12.1263 15.9239 11.1754 16.0558C10.2245 16.1877 9.3192 16.5459 8.53543 17.1002C7.75166 17.6545 7.11234 18.3888 6.67116 19.2414C6.22998 20.094 5.99982 21.04 6 22H4C3.99954 20.7788 4.27866 19.5737 4.81597 18.4771C5.35328 17.3804 6.13452 16.4214 7.09982 15.6733C8.06512 14.9253 9.18886 14.4082 10.3849 14.1617C11.581 13.9152 12.8176 13.9467 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM17.793 19.914L21.328 16.379L22.743 17.793L17.793 22.743L14.257 19.207L15.672 17.793L17.793 19.914Z" fill="white"/>
 						</svg>
-						<h1>Stay up to date</h1>
+						<h1 class="text-3xl lg:text-base">Stay up to date</h1>
 					</div>
 				</a>
 			</div>

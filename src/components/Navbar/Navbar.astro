@@ -1,0 +1,76 @@
+---
+import Amboss from "./NavLinks/Amboss.astro";
+import X from "./NavLinks/X.astro";
+import Substack from "./NavLinks/Substack.astro";
+import Instagram from "./NavLinks/Instagram.astro";
+import Telegram from "./NavLinks/Telegram.astro";
+import Discord from "./NavLinks/Discord.astro";
+import Podcast from "./NavLinks/Podcast.astro";
+
+---
+
+
+<nav class="bg-neutral-800 fixed w-full z-50 shadow-md">
+
+    <!-- Navbar container -->
+    <div class="container flex items-center justify-between mx-auto px-6 py-4">
+
+        <!-- Website subject name - Keegan Francis -->
+        <p class="flex items-center">
+            <span class="self-center text-md font-semibold whitespace-nowrap text-white uppercase">Keegan Francis</span>
+        </p>
+
+        <!-- 
+            The following section of code is the desktop render of the navigation bar.
+        -->
+        <div class="hidden md:flex items-center gap-8">
+            <!-- Media links -->
+            <Amboss/>
+            <X/>
+            <Substack/>
+            <Instagram/>
+            <Telegram/>
+            <Discord/>
+            <Podcast/>
+        </div>
+
+        <!-- 
+            The following section of code is the MOBILE render of the navigation bar.
+        -->
+        <!-- Hamburger menu button -->
+        <div class="block md:hidden tham tham-e-squeeze tham-w-6 z-40">
+            <div class="tham-box">
+              <div class="tham-inner bg-white" />
+            </div>
+          </div>
+        <!-- Mobile Menu Overlay -->
+        <div id="menu" class="absolute hidden -top-10 bg-neutral-900 bottom-0 right-0 flex-col w-[50vw] h-[110vh] py-1 pt-40 pl-12 space-y-6 text-2xl font-sansserif font-bold text-white ">
+            <!-- Media links -->
+            <Amboss/>
+            <X/>
+            <Substack/>
+            <Instagram/>
+            <Telegram/>
+            <Discord/>
+            <Podcast/>
+        </div>
+
+    </div>
+            
+        
+    </div>
+</nav>
+
+<script>
+    // Get the hamburger and menu DOM elements
+    const tham = document.querySelector(".tham");
+    const menu = document.getElementById('menu');
+      
+    // When the hamburger menu is clicked, set to active and display the mobile menu 
+    tham.addEventListener('click', () => {
+      tham.classList.toggle('tham-active');
+      menu.classList.toggle('hidden');
+    });
+
+
+</script>

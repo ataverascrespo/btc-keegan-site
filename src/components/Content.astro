@@ -1,0 +1,62 @@
+<section id="content" class="shadow-xl bg-white scroll-smooth pt-24 pb-24" >
+    <!-- Hero Container -->
+    <div class="h-[50vh] lg:min-h-screen container flex flex-col justify-center gap-20 mx-auto px-6 ">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-24">
+
+            <!-- Phone only visible on desktop screens - too annoying on mobile -->
+            <div class="hidden md:block h-full slideIn">
+                <!-- Phone -->
+                <div class="relative z-10 mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem]">
+                    <div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[72px] rounded-l-lg"></div>
+                    <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
+                    <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[178px] rounded-l-lg"></div>
+                    <div class="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
+                    <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                        <img src="/img/iphone.jpg" class="hidden dark:block w-[272px] h-[572px]" alt="" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone only visible on desktop screens - too annoying on mobile -->
+            <div class="flex md:hidden h-full slideIn">
+                <h1 class="text-center text-3xl font-bold text-neutral-900">Stay up to date with me</h1>
+            </div>
+            
+            <!-- Content link grid -->
+            <div class="flex flex-col h-full w-full">
+                <div class="grid grid-cols-1 h-full">
+                    <!-- Grid Card 1 -->
+                    <a href="https://keeganfrancis.substack.com/">
+                        <div class="flex flex-row h-full w-full items-center p-4 justify-center bg-neutral-50 hover:bg-neutral-200 hover:shadow-xl transition-all duration-300">
+                            <p class="self-center w-1/2 text-xl md:text-3xl font-normal md:font-light text-center">My Substack Newsletter</p>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.565 13.7367H2.43335V9.01H37.5667V13.7367H37.565ZM2.43335 18.02V40L20 30.1833L37.5667 40V18.02H2.43335ZM37.5667 0H2.43335V4.72667H37.5667V0Z" fill="#C4C4C4"/>
+                                </svg>
+                        </div>
+                    </a>
+                    <!-- Grid Card 2 -->
+                    <a href="https://www.gofullcrypto.com/">
+                        <div class="flex flex-row h-full w-full items-center p-4 justify-center bg-neutral-300  hover:bg-neutral-400 hover:shadow-2xl transition-all duration-300">
+                            <p class="self-center w-1/2 text-xl md:text-3xl font-normal md:font-light text-center">My Podcast</p>
+                            <svg width="42" height="40" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.5833 32.9792V39.2083H11.4167V32.9792C11.4167 30.3342 15.71 28.1875 21 28.1875C26.29 28.1875 30.5833 30.3342 30.5833 32.9792ZM21 8.54167C24.3042 8.54167 27.473 9.85424 29.8094 12.1906C32.1458 14.527 33.4583 17.6958 33.4583 21C33.4583 23.3958 32.7875 25.6383 31.6183 27.5358L28.6667 24.91C29.28 23.7408 29.625 22.3992 29.625 21C29.625 16.2083 25.7917 12.375 21 12.375C16.2083 12.375 12.375 16.2083 12.375 21C12.375 22.3992 12.72 23.7408 13.3333 24.91L10.3817 27.5358C9.21251 25.6383 8.54168 23.3958 8.54168 21C8.54168 17.6958 9.85425 14.527 12.1906 12.1906C14.527 9.85424 17.6959 8.54167 21 8.54167ZM21 0.875C26.3375 0.875 31.4564 2.99531 35.2305 6.76948C39.0047 10.5436 41.125 15.6625 41.125 21C41.125 25.37 39.7258 29.4142 37.3683 32.7108L34.4933 30.1233C36.2567 27.5167 37.2917 24.3733 37.2917 21C37.2917 16.6792 35.5752 12.5353 32.52 9.48005C29.4647 6.42477 25.3208 4.70833 21 4.70833C16.6792 4.70833 12.5353 6.42477 9.48006 9.48005C6.42478 12.5353 4.70834 16.6792 4.70834 21C4.70834 24.3733 5.74334 27.5167 7.50668 30.1233L4.63168 32.7108C2.185 29.2964 0.871085 25.2005 0.875009 21C0.875009 15.6625 2.99532 10.5436 6.76948 6.76948C10.5437 2.99531 15.6625 0.875 21 0.875ZM21 16.2083C22.2708 16.2083 23.4896 16.7132 24.3882 17.6118C25.2868 18.5104 25.7917 19.7292 25.7917 21C25.7917 22.2708 25.2868 23.4896 24.3882 24.3882C23.4896 25.2868 22.2708 25.7917 21 25.7917C19.7292 25.7917 18.5104 25.2868 17.6118 24.3882C16.7132 23.4896 16.2083 22.2708 16.2083 21C16.2083 19.7292 16.7132 18.5104 17.6118 17.6118C18.5104 16.7132 19.7292 16.2083 21 16.2083Z" fill="#4f4f4f"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <!-- Grid Card3  -->
+                    <a href="https://airtable.com/appsERmBspldR4IRt/shrtxGVTqxc5GDmpN">
+                        <div class="flex flex-row h-full w-full items-center p-4 justify-center bg-neutral-50 hover:bg-neutral-200 hover:shadow-xl transition-all duration-300">
+                            <p class="self-center w-1/2 text-xl md:text-3xl font-normal md:font-light text-center">My Articles</p>
+                            <svg width="33" height="41" viewBox="0 0 33 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.35 0C9.26261 0 8.21976 0.431963 7.45086 1.20086C6.68196 1.96976 6.25 3.01261 6.25 4.1H24.7C25.7874 4.1 26.8302 4.53196 27.5991 5.30086C28.368 6.06976 28.8 7.11261 28.8 8.2V32.8C29.8874 32.8 30.9302 32.368 31.6991 31.5991C32.468 30.8302 32.9 29.7874 32.9 28.7V4.1C32.9 3.01261 32.468 1.96976 31.6991 1.20086C30.9302 0.431963 29.8874 0 28.8 0L10.35 0Z" fill="#C4C4C4"/>
+                                <path d="M22.6501 40.9999C23.7375 40.9999 24.7803 40.5679 25.5492 39.799C26.3181 39.0301 26.7501 37.9873 26.7501 36.8999V10.2499C26.7501 9.16251 26.3181 8.11966 25.5492 7.35076C24.7803 6.58187 23.7375 6.1499 22.6501 6.1499H4.2001C3.11271 6.1499 2.06986 6.58187 1.30096 7.35076C0.53206 8.11966 0.100098 9.16251 0.100098 10.2499V36.8999C0.100098 37.9873 0.53206 39.0301 1.30096 39.799C2.06986 40.5679 3.11271 40.9999 4.2001 40.9999H22.6501ZM14.4501 10.2499H22.6501V20.4999H14.4501V10.2499ZM4.2001 10.2499H12.4001V12.2999H4.2001V10.2499ZM4.2001 14.3499H12.4001V16.3999H4.2001V14.3499ZM4.2001 18.4499H12.4001V20.4999H4.2001V18.4499ZM4.2001 22.5499H22.6501V24.5999H4.2001V22.5499ZM4.2001 26.6499H22.6501V28.6999H4.2001V26.6499ZM4.2001 30.7499H22.6501V32.7999H4.2001V30.7499Z" fill="#C4C4C4"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            
+            </div>
+            
+        </div>
+    </div>
+</section>
